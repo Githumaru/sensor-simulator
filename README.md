@@ -1,4 +1,4 @@
-## <span style="font-size:20px;">sensor-simulator</span>
+## <span style="font-size:20px;">Sensor-simulator</span>
 The app simulates behavior of a sensor
 Sensor simulator
 
