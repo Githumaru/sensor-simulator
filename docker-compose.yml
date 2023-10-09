@@ -1,0 +1,32 @@
+version: '3'
+services:
+  server:
+    stdin_open: true
+    tty: true
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - 8765:8765
+    volumes:
+      - ./server:/app
+
+
+  client:
+    stdin_open: true
+    tty: true
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    restart: always
+    volumes:
+      - ./client:/app
+    depends_on:
+      - server
+    env_file:
+      - .env
+
+
+
+
+
