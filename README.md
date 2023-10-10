@@ -29,15 +29,20 @@ To run this project, you'll need Docker installed on your system.
 
 Clone this repository to your local machine using [Git](https://git-scm.com/):
 
+```
 git clone https://github.com/Githumaru/sensor-simulator.git
 cd sensor-simulator
+```
 
 ## <span style="font-size:12px;">Build the Docker Containers:</span>
 
 In the project root directory, you'll find a docker-compose.yml file. This file defines the services and configurations for both the server and client containers.
 
 ## <span style="font-size:12px;">To build the Docker containers, open your terminal and run:</span>
+
+```
 docker-compose build
+```
 
 This command will build the Docker images defined in the Dockerfile for the server and client.
 
@@ -48,7 +53,10 @@ The server container relies on data files like temperature_data.json, humidity_d
 ## <span style="font-size:20px;">Start the Docker Containers:</span>
 
 Once the containers are built and the data files are ready, you can start the services:
+
+```
 docker-compose up
+```
 
 ## <span style="font-size:20px;">Sensor Modules</span>
 You can create custom sensor modules by inheriting from the Sensor class and implementing the necessary methods.
