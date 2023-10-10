@@ -50,10 +50,10 @@ The server container relies on data files like temperature_data.json, humidity_d
 Once the containers are built and the data files are ready, you can start the services:
 docker-compose up
 
-## <span style="font-size:20px;">Sensor Modules</span>Sensor Modules
+## <span style="font-size:20px;">Sensor Modules</span>
 You can create custom sensor modules by inheriting from the Sensor class and implementing the necessary methods.
 
 Add your sensor module to the server by importing it and creating an instance in the server.py script.
 
-## <span style="font-size:20px;">Configuration</span>Configuration
+## <span style="font-size:20px;">Configuration</span>
 The server and client WebSocket endpoints can be configured in the respective scripts.
