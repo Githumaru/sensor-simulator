@@ -22,31 +22,30 @@ Easily extensible to add new sensor types.
 Supports concurrent connections and data streaming.
 
 ## <span style="font-size:20px;">Installation</span>
-## Installation
 
 To run this project, you'll need Docker installed on your system.
 
-**Clone the Repository:**
+## <span style="font-size:14px;">Clone the Repository:</span>
 
 Clone this repository to your local machine using [Git](https://git-scm.com/):
 
 git clone https://github.com/Githumaru/sensor-simulator.git
 cd sensor-simulator
 
-Build the Docker Containers:
+## <span style="font-size:14px;">Build the Docker Containers:</span>
 
 In the project root directory, you'll find a docker-compose.yml file. This file defines the services and configurations for both the server and client containers.
 
-To build the Docker containers, open your terminal and run:
+## <span style="font-size:14px;">To build the Docker containers, open your terminal and run:</span>
 docker-compose build
 
 This command will build the Docker images defined in the Dockerfile for the server and client.
 
-Create Dummy Data Files:
+## <span style="font-size:14px;">Create Dummy Data Files:</span>
 
 The server container relies on data files like temperature_data.json, humidity_data.json, and waterflow_data.json. You can manually create these files in the server/ directory or generate them programmatically. If you have scripts to generate these files, run them now.
 
-Start the Docker Containers:
+## <span style="font-size:20px;">Start the Docker Containers:</span>
 
 Once the containers are built and the data files are ready, you can start the services:
 docker-compose up
